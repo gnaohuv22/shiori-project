@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7fdf7;
+  --foreground: #1a2e1a;
+  --primary: #4caf50;
+  --primary-light: #7dd880;
+  --primary-dark: #2e7d32;
+  --accent: #66bb6a;
+  --secondary: #8bc34a;
+  --muted: #c8e6c9;
+}
+
+/* Hide default cursor for all elements */
+*, 
+*::before, 
+*::after {
+  cursor: none !important;
+}
+
+/* Hide default cursor for specific interactive elements */
+a, 
+button, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"],
+[role="button"],
+[tabindex="0"] {
+  cursor: none !important;
+}
+
+/* Add Safari support for backdrop-filter */
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f1a0f;
+    --foreground: #e6f5e6;
+    --primary: #66bb6a;
+    --primary-light: #98ee99;
+    --primary-dark: #338a3e;
+    --accent: #81c784;
+    --secondary: #9ccc65;
+    --muted: #1b5e20;
+  }
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+/* Prevent text selection and copy functionality */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* For form inputs and textareas, we still want to allow selection */
+input, textarea {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.lucky-bg {
+  background-image: radial-gradient(#4caf5015 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.border-gradient {
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1;
+}
+
+.clover-spinner {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.card {
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
