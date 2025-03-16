@@ -8,7 +8,7 @@ const ScrollProgress = () => {
   
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-primary/50 z-40 origin-left pointer-events-none will-change-transform"
+      className="fixed top-0 left-0 right-0 h-2 bg-primary/50 z-9999 origin-left pointer-events-none will-change-transform"
       style={{ 
         scaleX: scrollYProgress,
         position: 'fixed',
