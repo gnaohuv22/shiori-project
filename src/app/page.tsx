@@ -260,7 +260,7 @@ export default function Home() {
           </motion.div>
           
           <p className="opacity-70 text-sm">
-            © {new Date().getFullYear()} Shiori 祉栞. Mọi quyền được bảo lưu.
+            © {new Date().getFullYear()} Shiori 祉栞. All rights reserved.
           </p>
         </div>
       </footer>
