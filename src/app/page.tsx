@@ -45,19 +45,19 @@ export default function Home() {
   const categories = [
     {
       title: "Game",
-      description: "LMHT, Tốc Chiến, PUBG... bất kỳ game gì mà tớ đủ tiền (và đam mê) để chơi.",
+      description: "LoL, Tốc Chiến, PUBG... bất kỳ game gì mà mình đủ tiền (và đam mê) để chơi.",
       icon: FaGamepad,
       color: "text-green-500",
     },
     {
       title: "Esports",
-      description: "Theo dõi và ủng hộ các tuyển thủ thi đấu. Nói không với bế em! Ngu là chửi tất.",
+      description: "Theo dõi và ủng hộ các tuyển thủ thi đấu ở các thể loại bộ môn (LoL, PUBG...). Mình là fan T1 Faker, ngoài ra, mình cũng ủng hộ các đội tuyển Việt Nam ra thế giới nha.",
       icon: FaTrophy,
       color: "text-yellow-500",
     },
     {
       title: "Công nghệ",
-      description: "Cũng cũng ưa thích công nghệ, điện thoại, có thể ngồi xàm cả ngày về những thứ nhỏ nhặt như cách sensor nhận hình ảnh.",
+      description: "Thích nói chuyện về công nghệ lắm, nói gì cũng được, nói cả ngày cả đêm cũng chim ưng hết á.",
       icon: FaLaptopCode,
       color: "text-blue-500",
     },
@@ -69,7 +69,7 @@ export default function Home() {
     },
     {
       title: "Post nhảm nhí",
-      description: "Đời người ai cũng có chút tâm sự, nhưng có thể đôi lúc tớ lười để làm điều đó.",
+      description: "Đời người ai cũng có chút tâm sự cả, mình cũng muốn chia sẻ nhiều chút á.",
       icon: FaLaughSquint,
       color: "text-pink-500",
     },
@@ -128,7 +128,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 opacity-90">
-                Chào mừng bạn đến với cái web chả có gì để bấm của Shiori 祉栞, nơi tớ chả làm cái mẹ gì trừ việc nói phét về mọi thứ trên đời và tìm người có tên giống tên page ạ ^^
+                Chào mừng bạn đến với web giới thiệu của Shiori 祉栞, ngoài việc nói xàm về những thứ ở dưới, tớ tìm một bạn có ingame Wildrift như tên page ạ ^^
               </p>
               
               <motion.div
@@ -137,10 +137,10 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
               >
                 <a 
-                  href="#chuyenmuc" 
+                  href="https://www.facebook.com/shiori.eudaimonia" 
                   className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors shadow-lg shadow-primary/30"
                 >
-                  Khám phá
+                  Tớ ở đây nè
                 </a>
               </motion.div>
             </motion.div>
@@ -156,14 +156,14 @@ export default function Home() {
         </section>
         
         {/* Categories Section */}
-        <section id="chuyenmuc" className="py-20 bg-gradient-to-b from-background to-primary/5">
+        <section id="có gì trên page" className="py-20 bg-gradient-to-b from-background to-primary/5">
           <div className="container mx-auto px-4">
             <AnimatedSection className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                <span className="text-gradient">📌 Shiori 祉栞 làm blog làm gì?</span>
+                <span className="text-gradient">📌 Lý do Shiori 祉栞 tồn tại</span>
               </h2>
               <p className="max-w-2xl mx-auto opacity-80">
-                Không có gì đặc biệt, tớ muốn nói những thứ không ai quan tâm, và viết những thứ muốn mọi người cùng đọc. Và tớ tìm người có tên ingame Tốc Chiến như tên page ạ.
+              Chẳng có lý do gì to tát đâu. Mình ở đây để nói về những thứ mình thích, có thể bạn không thích lắm, nhưng kệ mẹ bạn. Mình viết những gì thật sự nghĩ, thế thôi.
               </p>
             </AnimatedSection>
             
@@ -209,10 +209,10 @@ export default function Home() {
                   
                   <div className="w-full md:w-2/3">
                     <p className="mb-4">
-                      Ở đây không có chân lý, ở đây chỉ có dăm ba câu ca nhảm nhí được cất lên bất chợt.
+                      Ở đây không có chân lý, chỉ có mấy câu nhảm nhí được phát ra.
                     </p>
                     <p className="mb-4">
-                      Tớ muốn viết, nhưng quá lười để viết; muốn chia sẻ, nhưng không có ai cùng sở thích; muốn yêu và được yêu, cái đó có Anh trai Vượt Ngàn Chông Gai giúp rồi; muốn chơi game, cái đấy cũng chơi suốt rồi. Dù sao thì, cảm ơn cậu vì đã đến đây, trở thành một phần trong những niềm vui của tớ ạ.
+                    Mình muốn viết, nhưng lười quá. Muốn chia sẻ, nhưng chẳng mấy ai chung gu. Muốn yêu và được yêu; cái đó đã có Anh Trai Vượt Ngàn Chông Gai lo hộ, nhưng mình vẫn muốn yêu một ai đó nhóe. Muốn chơi game... ờ thì, chơi suốt rồi còn gì. Dù sao cũng cảm ơn bạn đã ghé qua, góp một phần vào cái đống vui vẻ lộn xộn này của mình.
                     </p>
                     <div className="mt-6 mb-6 border-l-2 border-primary pl-4">
                       <p className="text-sm italic text-foreground/80 font-light">
@@ -230,7 +230,7 @@ export default function Home() {
                       >
                         Facebook
                       </motion.a>
-                      {['Twitter', 'Instagram'].map(platform => (
+                      {['X', 'Instagram'].map(platform => (
                         <Tooltip key={platform} text="Không có đâu mà tìm">
                           <motion.span
                             className="px-4 py-2 border border-primary/30 rounded-full hover:bg-primary/20 transition-colors cursor-not-allowed opacity-75 flex items-center justify-center min-w-[120px]"

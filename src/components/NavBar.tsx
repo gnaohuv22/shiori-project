@@ -33,12 +33,15 @@ export default function NavBar() {
           whileHover={{ scale: 1.05 }}
         >
           <BookmarkCloverImage className="text-primary" size={28} animate={true} />
-          <span className="font-bold text-xl">Shiori 祉栞</span>
+          <a href="#hero" className="flex items-center gap-2">
+            <span className="font-bold text-xl">Shiori 祉栞</span>
+          </a>
+          
         </motion.div>
         
         <nav>
           <ul className="flex gap-6">
-            {['Trang chủ', 'Chuyên mục', 'Về tớ'].map((item) => (
+            {['Trang chủ', 'Có gì trên page', 'Về tớ'].map((item) => (
               <motion.li 
                 key={item}
                 whileHover={{ scale: 1.1 }}
